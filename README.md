@@ -15,7 +15,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 - [✅] Dia 02 - Git - Aprendi a criar um repositorio local 
 - [✅] Dia 03 - GitHub - Aprendi a mesclar o meu repositorio local com meu repositorio remoto GitHub
 
-#### Bloco 3: CSS e HTML
+##### Bloco 3: CSS e HTML
 
 - [ ]Dia 01 - HTML & CSS - Estruturas de página
 
