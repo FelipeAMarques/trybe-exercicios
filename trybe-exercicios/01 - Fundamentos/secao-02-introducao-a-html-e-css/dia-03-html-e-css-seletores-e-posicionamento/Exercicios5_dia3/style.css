@@ -7,4 +7,10 @@ text-transform: uppercase;
 .paroimpar:nth-of-type(2n){
     color: green;
 }
+.header{
+    color: red;
+}
+h1 em{
+    font-size: 40px;
+}
 
