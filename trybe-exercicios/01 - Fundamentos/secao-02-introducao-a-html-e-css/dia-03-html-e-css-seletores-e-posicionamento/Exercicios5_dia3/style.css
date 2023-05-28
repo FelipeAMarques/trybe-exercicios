@@ -20,4 +20,9 @@ li{
 li em{
     font-weight:bold;
 }
-
+.linguagens:nth-of-type(-n+3){
+    color: blue;
+}
+.Java{
+    background-color: pink;
+}
