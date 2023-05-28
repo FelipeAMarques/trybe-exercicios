@@ -1,0 +1,14 @@
+p, h1, ul, ol {
+  text-align: center;
+}
+li:hover{
+  background-color: rgb(121, 145, 255);
+}
+ul:active, ol:active{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+} 
+ul, ol{
+  font-size: 30px;
+  list-style: none;
+}
+
