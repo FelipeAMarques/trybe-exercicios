@@ -3,7 +3,8 @@ let somaNumbers;
 let mediaAritica
 let mediaMoreThan20
 // somei os numero da array acima ^
-somaNumbers = numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9];
+for(let index = 0; index < numbers.length; index += 1) {
+    console.log(`${index} - ${numbers[index]}`)}
 // media aritimetica abaixo 
 mediaAritica = somaNumbers / 10;
 // Se o resultado é maior que 20
@@ -14,4 +15,6 @@ mediaMoreThan20 = 'O valor da média aritmética é maior que 20'
 };
 console.log(mediaMoreThan20);
 // for para descobrir o maior valor
-for(let index= 0;index < numbers.length; index += 1);
+for(let index = 0; index < numbers.length; index += 1) {
+    console.log(`${index} - ${numbers[index]}`)
+}
