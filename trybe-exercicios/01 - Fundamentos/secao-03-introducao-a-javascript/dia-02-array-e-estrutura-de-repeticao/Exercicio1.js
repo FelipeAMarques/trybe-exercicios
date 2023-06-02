@@ -13,3 +13,5 @@ mediaMoreThan20 = 'O valor da média aritmética é maior que 20'
     mediaMoreThan20 = 'O valor da média aritmética é menor ou igual a 20'
 };
 console.log(mediaMoreThan20);
+// for para descobrir o maior valor
+for(let index= 0;index < numbers.length; index += 1);
