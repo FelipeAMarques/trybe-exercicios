@@ -22,9 +22,35 @@
 
     const cadeVoce = document.getElementById('where-are-you');
 
+    // Acesse parent a partir de where-are-you e adicione uma color a ele.
+
+    const pai = cadeVoce.parentElement 
+    pai.style.color = 'blue'
+
     // Acesse o first-child-of-child e adicione um texto a ele. Você se lembra dos vídeos da aula anterior? Eles ensinam como fazer isso.
 
-    
+    const filhoDoCadeVoce = cadeVoce.firstElementChild
+    filhoDoCadeVoce.innerHTML = 'Deus, minha vida ta um caos'
+
+    // Acesse o first-child a partir de parent.
+
+    const primeiroFilho = pai.firstElementChild
+
+    // Acesse o first-child a partir de where-are-you.
+
+    const primeiroFilhoApartirDoWhere = cadeVoce.previousSibling
+
+    // Acesse o texto Attention! a partir de where-are-you
+
+    const atencao = cadeVoce.nextElementSibling
+
+    // Acesse o third-child a partir de where-are-you
+
+    const terceiroFilho = cadeVoce.nextElementSibling.nextElementSibling
+
+    // Acesse o third-child a partir de parent.
+
+    const terceiroFilhoApartirdePai = pai.lastElementChild.previousElementSibling
 
     </script>
 </body>
