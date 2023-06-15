@@ -60,16 +60,56 @@
       // COLOQUE SEU CÓDIGO AQUI
 
       // 1 requisito 
-      let h1 = document.createElement('h1')
+      
+      const h1 = document.createElement('h1')
       h1.innerText = 'TrybeTrip - Agência de Viagens'
       document.body.appendChild(h1)
 
       // 2 Requisito 
 
-      let mainVar = document.createElement('main')
-      main.id = 'main-content'
-      document.body.appendChild(main)
+      const mainVar = document.createElement('main')
+      mainVar.className = 'main-content'
+      document.body.appendChild(mainVar)
+
+      // 3 requisito 
+
+      const sectionVar = document.createElement('section')
+      sectionVar.className = 'main-content'
+      mainVar.appendChild(sectionVar)
+
+      // 4 requisito 
+
+      const pVar = document.createElement('p')
+      pVar.innerText = "Meu deus que dor"
+      sectionVar.appendChild(pVar)
+
+      // 5 requisito
       
+      const segundoFilho = document.createElement('section')
+      segundoFilho.className = 'left-content'
+      mainVar.appendChild(segundoFilho)
+
+       // 6 requisito
+      
+      const terceiroFilho = document.createElement('section')
+      terceiroFilho.className = 'left-content'
+      mainVar.appendChild(terceiroFilho)
+
+      // 7 requisito 
+
+      const imagemVar = document.createElement('img')
+      imagemVar.src = 'https://picsum.photos/200' 
+      imagemVar.className = 'small-image'
+      segundoFilho.appendChild(imagemVar)
+
+      // 8 requisito 
+
+      const listaOrdenada = document.createElement('ul')
+      const listaNumeros =['Um', 'Dois', 'Tres', 'quatro', 'Cinco', 'Seis', 'Sete', 'Nove', 'Dez']
+      for(let index = 0; index < listaNumeros.length; index += 1){
+        listaOrdenada = listaNumeros[index];
+      }
+
 
     </script>
   </body>
