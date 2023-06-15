@@ -106,10 +106,13 @@
 
       const listaOrdenada = document.createElement('ul')
       const listaNumeros =['Um', 'Dois', 'Tres', 'quatro', 'Cinco', 'Seis', 'Sete', 'Nove', 'Dez']
+      
       for(let index = 0; index < listaNumeros.length; index += 1){
-        listaOrdenada = listaNumeros[index];
+        const liVar = document.createElement('li')
+        liVar.innerText = listaNumeros[index];
+        listaOrdenada.appendChild(liVar)
       }
-
+        terceiroFilho.appendChild(listaOrdenada)
 
     </script>
   </body>
