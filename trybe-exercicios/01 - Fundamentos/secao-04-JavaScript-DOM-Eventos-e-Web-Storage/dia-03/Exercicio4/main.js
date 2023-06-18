@@ -12,6 +12,14 @@ const abaixandoOQuadrado = document.querySelector('.tech')
 abaixandoOQuadrado.classList.remove('tech')
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando este for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como é possível fazer isso? Dica: Lembre-se do método `.classList.remove`.
+const adicionandoTech = document.querySelectorAll('li')
+
+const funcaoLiTech = () => {
+  const li = document.getElementsByTagName('li')
+  for(let index =0; index < li.length; index += 1)
+}
+
+adicionandoTech.addEventListener('click', funcaoLiTech)
 
 // 3. Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech'.
