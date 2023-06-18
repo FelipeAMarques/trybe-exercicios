@@ -7,7 +7,9 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // 1. Copie esse arquivo e edite apenas ele.
 // 1.1. Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
-
+//R= pq ele ta com uma classe tech que leva ele um pouco para cima 
+const abaixandoOQuadrado = document.querySelector('.tech')
+abaixandoOQuadrado.classList.remove('tech')
 // 2. Crie uma função que adicione a classe 'tech' ao elemento `li` quando este for clicado.
 // 2.1. Deve existir apenas um elemento com a classe 'tech'. Como é possível fazer isso? Dica: Lembre-se do método `.classList.remove`.
 
