@@ -11,3 +11,8 @@ inputCheckbox.addEventListener('click', (event) => {
     event.preventDefault()
 })
 
+inputText.addEventListener('keypress', (event) => {
+    const escrita = event.key
+    if(escrita != 'a'){
+    event.preventDefault()}
+})
