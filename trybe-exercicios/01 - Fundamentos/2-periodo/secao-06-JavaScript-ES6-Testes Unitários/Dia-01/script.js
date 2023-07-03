@@ -28,8 +28,9 @@ const promo = [
     
     try{
     const productObject = arrumaNumero(number);
+    checkValidRange(number);
     checkName(name);
-    arrumaNumero(parseInt(number))
+    arrumaNumero(parseInt(number));
 
     firstText.innerHTML = `Boas-Vindas, ${name}`
     secondText.innerText = `A promoção do dia é ${productObject.product} no valor de ${productObject.price}`
@@ -39,7 +40,11 @@ const promo = [
 }
   
   const arrumaNumero = (number) => {
-    return promo[number - 1]
+    for (let index = 0; index < promo.length; index += 1) {
+      if (number - 1 === index) {
+        return promo[index];
+      }
+    }
   }
 
   const checkName = (name) => {
@@ -48,4 +53,10 @@ const promo = [
     if (!name.match(letters)) {
       throw new Error('É necessário digitar um nome válido');
     }
+  }
+
+  const checkValidRange = (number) => {
+      if(number < 0 || number > 10){
+        throw new Error('É necessário digitar um número entre 1 e 10!')
+      }
   }
