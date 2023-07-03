@@ -25,12 +25,27 @@ const promo = [
   const showPromo = (name, number) => {
     const firstText = document.querySelector('#text-initial');
     const secondText = document.querySelector('#text-final');
-    const productObject = arrumaNumero(parseInt(number))
+    
+    try{
+    const productObject = arrumaNumero(number);
+    checkName(name);
+    arrumaNumero(parseInt(number))
 
     firstText.innerHTML = `Boas-Vindas, ${name}`
     secondText.innerText = `A promoção do dia é ${productObject.product} no valor de ${productObject.price}`
-  }
+    } catch(err) {
+        secondText.innerHTML = err.message
+    }
+}
   
   const arrumaNumero = (number) => {
     return promo[number - 1]
+  }
+
+  const checkName = (name) => {
+    let letters = /[aA-zZ]+/;
+    
+    if (!name.match(letters)) {
+      throw new Error('É necessário digitar um nome válido');
+    }
   }
