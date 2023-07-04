@@ -37,6 +37,10 @@ const promo = [
     } catch(err) {
         secondText.innerHTML = err.message
     }
+    finally{
+      document.querySelector('#name-id').value = ''
+      document.querySelector('#number-id').value = ''
+    }
 }
   
   const arrumaNumero = (number) => {
