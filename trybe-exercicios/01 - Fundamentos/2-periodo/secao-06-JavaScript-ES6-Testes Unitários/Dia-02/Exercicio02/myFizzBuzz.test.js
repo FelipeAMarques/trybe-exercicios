@@ -1,5 +1,5 @@
 
-const { default: expect } = require('expect')
+
 const myFizzBuzz = require('./myFizzBuzz')
 
 

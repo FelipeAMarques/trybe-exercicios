@@ -1,0 +1,30 @@
+
+const {encode, decode, mapString} = require('./encodeDecode')
+
+
+describe('teste funções atv 03', () => {
+    it('Teste se encode e decode são funções.', () => {
+        expect(typeof encode).toBe('function')
+        expect(typeof decode).toBe('function')
+    })
+    it('Para a função encode, teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4, 5, respectivamente', () => {
+        expect(encode('a')).toEqual('1')
+        expect(encode('e')).toEqual('2')
+        expect(encode('i')).toEqual('3')
+        expect(encode('o')).toEqual('4')
+        expect(encode('u')).toEqual('5')
+    })
+    it('Para a função decode, teste se os números 1, 2, 3, 4, 5 são convertidos nas vogais a, e, i, o, u, respectivamente.', () => {
+        expect(decode('1')).toEqual('a')
+        expect(decode('2')).toEqual('e')
+        expect(decode('3')).toEqual('i')
+        expect(decode('4')).toEqual('o')
+        expect(decode('5')).toEqual('u')
+    })
+    it('Teste se as demais letras e os demais números não são convertidos para cada caso.', () => {
+        expect(encode('ana')).toEqual('1n1')
+    })
+    it('Teste se a string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro.', () => {
+        expect(decode('trybe').length).toEqual(5)
+    })
+})
