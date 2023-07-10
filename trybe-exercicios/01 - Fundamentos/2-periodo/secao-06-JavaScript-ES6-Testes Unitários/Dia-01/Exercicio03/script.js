@@ -102,17 +102,17 @@ const clients = [
     for(let index = 0; index < clients.length; index += 1){
         const temNome = clients[index]
         if(name === temNome.name){
-            return temNome.address
-        }if(!temNome){
-            throw new Error('Pessoa não encontrada, tente novamente')
+            return `Destinatário: ${temNome.name}. Endereço: Rua dos Girassóis, 1011, Barra, Salvador - BA. CEP: 34567-890`
         }
-        
-    }
-}catch (error){return error.message}
-  }; console.log(findPersonByName('Rafael Ferreir'))
+      }
+      throw new Error('Pessoa não encontrada, tente novamente')
+    }catch (error){return error.message}
+  }; console.log(findPersonByName('Rafael Ferreira'))
   
   const findPersonByPosition = (position) => {
     // seu código aqui
+
+    
   };
   
   const findPeopleByState = (state) => {
